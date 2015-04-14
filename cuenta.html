@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://7.pdvop2sz.z8.ru/paperclip/1.0/ico/favicon.ico">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+ 
+    <title>CovermeApp</title>
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Resources -->
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="screen" />
+	<!-- modal -->	
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+	<!-- <link rel="stylesheet" href="css/labs.css" type="text/css" media="screen" /> -->
+	
+	  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+	  <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+	  <link rel="stylesheet" type="text/css" href="css/custom.css" />
+      <script src="js/modernizr.custom.17475.js"></script>
+	
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../../oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="../../../oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    
+    <!-- Navigation -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <a class="navbar-brand" href="index.html"><img src="img/logo-cover.png" style="margin-top:-18px" alt="..."></a>
+        </div>
+        <div class="collapse navbar-collapse">
+       
+		  
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#search" class="dropdown-toggle fancybox">
+				 <i class="fa fa-users"></i>
+					Gente cerca
+			  </a>
+			</li>
+            <div id='search' style='width:auto;display: none;'>
+                                <div class='sign-form'>
+                                    <div class='sign-inner'>
+                                        <center><h3 class='first-child'>Busqueda Rápida</h3></center>
+                                        <hr>
+                                        <form role='form'>
+                                            <div class='form-group'>
+
+                                            </div>
+                                            <div class='form-group'>
+
+                                                <label>Distancia (Kms/Millas)</label>
+                                                <br>
+                                                <input id="slider2" type="range" onchange="printValue2('slider2', 'rangeValue2')" max="100" min="5">
+                                                <input id="rangeValue2"  class="range" type="text" size="2">
+                                            </div>
+                                            <br>
+                                            <div class='form-group'>
+                                                <label>Intereses</label><br>
+                                                <div class="checkbox-inline">
+                                                    <input type="checkbox" checked="checked" value="Hombres" name="sex">
+                                                    Hombres
+                                                    <br>
+                                                    <input type="checkbox" value="Mujeres" name="sex">
+                                                    Mujeres
+                                                    <br>
+                                                </div>
+                                                <br>
+                                            </div>
+                                            <div class='form-group'>
+                                                <center><a class="btn btn-lg btn-red" href="busqueda.html">Buscar ahora</a></center>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                 </div>
+                 <li class="dropdown">
+					<a href="#listado" class="dropdown-toggle fancybox">
+                    <i class="fa fa-comments"></i>
+					Mensajes
+					</a>
+				</li>
+                
+                	<div id='listado' style='width:auto;display: none;'>
+                                <div class='sign-form'>
+                                    <div class='sign-inner'>
+                                        <center><h3 class='first-child'>Listado de Mensajes</h3></center>
+                                        <hr>
+                                       
+                                       <ul style="list-style-type:none">
+                                       		<li>
+                                            	<a href="perfil.html">
+                                                    <span class="badge pull-right">3</span>
+                                                     Nombre del Usuario
+                                                </a>
+                                                <br><hr>
+                                            </li>
+                                            <li>
+                                            	<a href="perfil.html">
+                                                    <span class="badge pull-right">3</span>
+                                                     Nombre del Usuario
+                                                </a>
+                                                 <br><hr>
+                                        	</li>
+                                            <li>
+                                            	<a href="perfil.html">
+                                                    <span class="badge pull-right">3</span>
+                                                     Nombre del Usuario
+                                                </a>
+                                                 <br><hr>
+                                        	</li>
+                                            <li>
+                                            	<a href="perfil.html">
+                                                    <span class="badge pull-right">3</span>
+                                                     Nombre del Usuario
+                                                </a>
+                                                 <br><hr>
+                                        	</li>
+                                            <li>
+                                            	<a href="perfil.html">
+                                                    <span class="badge pull-right">3</span>
+                                                     Nombre del Usuario
+                                                </a>
+                                                 <br><hr>
+                                        	</li>
+                                            <li>
+                                            	<a href="perfil.html">
+                                                    <span class="badge pull-right">3</span>
+                                                     Nombre del Usuario
+                                                </a>
+                                                 <br><hr>
+                                        	</li>
+                                            <li>
+                                            	<a href="perfil.html">
+                                                    <span class="badge pull-right">3</span>
+                                                    Nombre del Usuario
+                                                </a>
+                                                 <br><hr>
+                                        	</li>
+                                            
+                                       </ul>
+                                       
+                                    </div>
+                                </div>
+                 </div>
+			
+				
+			
+			<li class="dropdown">
+				<a href="#">
+					<img src="http://placehold.it/42x42">
+                    	<div class="popover-test">
+						<button class="btn btn-xs btn-red botoncabecera" data-toggle="popover" data-placement="bottom"  data-html="true"  		data-content="
+						
+						<div class='info-board info-board-red'>
+							<h6>Configuracion de Cuenta</h6>
+						</div>
+						<br>
+						<div class='info-board info-board-red'>
+							<h6>Cerrar Sesión</h6>
+						</div>
+				"><i class="fa fa-sort-down" style="color:white"></i>
+						</button>
+                        </div>
+				</a> 
+			</li>
+		</ul>
+          <!-- Mobile Search -->
+          <form class="navbar-form navbar-right visible-xs" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                <button class="btn btn-red" type="button">Search!</button>
+              </span>
+            </div>
+          </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div> <!-- / .navigation -->
+	
+	<div class="wrapper" style="margin-top:95px;">
+		 <div class="container">
+			 <div class="row">
+					<div class='col-sm-3'>
+						<div class="panel panel-default">
+						  <div class="panel-body">
+							<ul class="media-list">
+							  <li class="media">
+								<a class="pull-left" href="#">
+								</a>
+								<div class="media-body">
+									<span class="pull-right">
+									<br>
+										<p><small>Tu Popularidad es:</small></p>
+										<p>Muy Baja</p>
+								  </span>
+									  <img src="http://placehold.it/96x96">
+								</div>
+							  </li>
+							</ul>
+							<br>
+						
+							<center>
+								<!-- <a class="btn btn-lg btn-default">Aumenta tu popularidad</a> -->
+								<div id="stars" data-score="1"></div>
+							</center>
+							
+							
+							<br><br>
+								<a id="cuenta">
+									<span class=" pull-right"><i class="fa fa-arrow-right"></i></span>
+									Editar Datos Generales
+								</a>
+							<br><br>
+								<a id="fotos">
+									<span class=" pull-right"><i class="fa fa-arrow-right"></i></span>
+									Editar Fotos de Perfil
+								</a>
+							<br><br>
+								<a id="pagos">
+									<span class=" pull-right"><i class="fa fa-arrow-right"></i></span>
+									Pagos
+								</a>
+							<br><br>
+								<a id="encuentros">
+									<span class=" pull-right"><i class="fa fa-arrow-right"></i></span>
+									Mensajes
+							<br><br>
+								<a id="mensajes">
+									<span class="pull-right"><i class="fa fa-arrow-right"></i></span>
+									Encuentros
+								</a>
+							<br><br>
+							
+						</div>
+						</div>
+						<div class="panel panel-default">
+						   <div class="panel-body">
+								<span class="pull-right">0.0</span>
+									Puntuación
+								<div class="container">	
+									<div class="row">
+										<div class='col-sm-4'>
+											<img src="http://placehold.it/64x64">
+										</div>
+										<div class='col-sm-4'>
+											<img src="http://placehold.it/64x64">
+										</div>
+										<div class='col-sm-4'>
+											<img src="http://placehold.it/64x64">
+										</div>
+									</div>
+								</div>
+						   </div>
+						</div>
+						
+					</div>
+					<div class='col-sm-9' id="panel">
+					  <div class="panel panel-default">
+						  <div class="panel-body">
+							<!-- <div class='col-sm-2'>
+								<div class="social">
+									  <ul class="list-inline">
+										<li><a href="#" class="rss"><i class="fa fa-envelope mensaje2"></i></a></li>
+									</ul>
+								</div>
+							</div> -->
+								<div class='col-sm-1'></div>
+								<div class='col-sm-11'>
+									<div class="row">
+										<h2>Mi perfil, 25 </h2>
+										<hr>
+										
+										<form role='form'>
+											  <div class='input-group'>
+												<span class='input-group-addon'><i class='fa fa-user'></i></span>
+												<input type='text' class='form-control' id='email' placeholder='Nombre' data-original-title='' title=''>
+											  </div>
+											  <br>
+											  <div class='input-group'>
+												<span class='input-group-addon'><i class='fa fa-user'></i></span>
+												<input type='email' class='form-control' id='email' placeholder='Email' data-original-title='' title=''>
+											  </div>
+											  <br>
+											  <div class='input-group'>
+												<span class='input-group-addon'><i class='fa fa-user'></i></span>
+												<input type='password' class='form-control' id='email' placeholder='Password' data-original-title='' title=''>
+											  </div>
+											  <br>
+											 
+											<div class="row">		
+											  <div class='col-sm-6'>
+												<label>Sexo</label><br>
+												<input type='radio' name='sex' value='male' checked='checked'>Masculino</input> <br>
+												<input type='radio' name='sex' value='female'>Femenino</input>
+											  </div>
+											  <div class='col-sm-6'>
+											   <label>Intereses</label><br>
+											  <input type='checkbox' name='sex' value='Hombres' checked='checked'>Hombres</input> <br>
+											  <input type='checkbox' name='sex' value='Mujeres'>Mujeres</input><br>
+											  </div>
+											</div>
+											<div class="row">		
+											  <div class='col-sm-9'>
+												<div class='col-sm-3'>
+													<label>Día</label>
+														<select class='form-control' data-toggle='popover' data-placement='left' data-trigger='focus' data-content='Enter a valid email here.' data-original-title='Email'>
+															<option></option>
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+															<option>5</option>
+															<option>6</option>
+															<option>7</option>
+															<option>8</option>
+															<option>9</option>
+															<option>10</option>
+															<option>11</option>
+															<option>12</option>
+															<option>13</option>
+															<option>14</option>
+															<option>15</option>
+															<option>16</option>
+															<option>17</option>
+															<option>18</option>
+															<option>19</option>
+															<option>20</option>
+															<option>21</option>
+															<option>22</option>
+															<option>23</option>
+															<option>24</option>
+															<option>25</option>
+															<option>26</option>
+															<option>27</option>
+															<option>28</option>
+															<option>29</option>
+															<option>30</option>
+															<option>31</option>
+													</select>
+												</div>
+												<div class='col-sm-3'>
+													<label>Mes</label>
+														<select class='form-control' data-toggle='popover' data-placement='left' data-trigger='focus' data-content='Enter a valid email here.' data-original-title='Email'>
+																	<option></option>
+																	<option>Enero</option>
+																	<option>Febrero</option>
+																	<option>Marzo</option>
+																	<option>Abril</option>
+																	<option>Mayo</option>
+																	<option>Junio</option>
+																	<option>Julio</option>
+																	<option>Agosto</option>
+																	<option>Septiembre</option>
+																	<option>Octubre</option>
+																	<option>Noviembre</option>
+														</select>
+												</div>
+												<div class='col-sm-3'>
+													<label>Año</label>
+													<input type='text' class='form-control' maxlength='4' id='pass' placeholder='Año' data-toggle='popover' data-placement='left' data-trigger='focus' data-content='Enter a valid email here.' data-original-title='Email'	>
+												</div>
+											</div>					  
+										</div>
+										<br>
+										
+												<div class='input-group'>
+										
+									<label>Rango en Distancia (Kms/Millas)</label>
+									<br>
+									<input id="slider3" type="range" onchange="printValue3('slider3','rangeValue3')" max="100" min="5">
+									<input id="rangeValue3" class="range" type="text" size="2">
+												</div>
+											</div>
+										
+										<center>
+												<button type='submit' class='btn btn-red'>Cambiar Datos</button>
+										</center>
+										<hr>
+										</form>
+										
+										
+									
+									</div>
+								</div>
+							</div>
+						  </div>
+						</div>
+					</div>
+			</div>
+			<hr>
+	</div>			
+
+	<!-- Footer -->
+	 <footer>
+      <div class="container">
+        <div class="row">
+          <!-- Contact Us -->
+			
+		  <div class="col-sm-4 footerseparator">
+				<center>	
+					<h4 class="footertitulo"><i class="fa fa-android iconfooter"></i>&nbsp;CovermeApp para Android</h4>
+					<!-- <small>Descarga ahora desde en <a href="#">Google Play</a></small> -->
+						<center>
+						<img src="img/googleplay.png">
+					</center>
+				</center>
+			</div>
+			
+			<div class="col-sm-4 footerseparator">
+				<center>
+					<h4 class="footertitulo"><i class="fa fa-apple  iconfooter"></i>&nbsp;CovermeApp para IOS</h4>
+					<!-- <small>Descarga ahora desde <a href="#">Itunes</a></small> -->
+					<center>
+						<img src="img/appstore.png">
+					</center>
+				</center>
+			</div>
+		  
+		  <div class="col-sm-4 footerseparator">
+				<center>	
+					<h4 class="footertitulo"><i class="fa fa-heart  iconfooter"></i>&nbsp;Difunde la diversion</h4>
+						
+							<img src="img/facebook.png">
+							<img src="img/twitter.png">
+					
+				</center>
+		  </div>
+		  
+          <!--  <div class="col-sm-3">
+				<h4><i class="fa fa-twitter-square text-red"></i>&nbsp;LinkDate para Android</h4>
+			</div> -->
+        </div>
+      </div>
+	 </div>
+    </footer>
+	 
+	<div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright">
+            Copyright 2014 - CoverMeApp | Derechos Reservados
+          </div>
+        </div>
+      </div>  <!-- / .row -->
+    </div> <!-- / .container -->
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/scrolltopcontrol.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/ui-elements.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquerypp.custom.js"></script>
+	<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+	
+	
+	<script type="text/javascript" src="js/labs.js"></script>
+	<script type="text/javascript" src="js/jquery.raty.js"></script>
+	
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	
+	<script type="text/javascript">
+			
+			$( '#carousel' ).elastislide();
+			
+	</script>
+   <script type="text/javascript">
+										$(document).ready(function() {
+										$('#stars').raty({
+										  number: 10,
+										  readOnly: true, score: 3,
+										});
+									});			
+									</script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+	</script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		
+		$('#cuenta').click(function(){
+
+			$.ajax({
+	            type: "POST",
+	            //data: dataString,
+	            url: "cuentaajax.html",
+	       		success: function(a) {
+
+	       			$('#panel').html(a);
+
+	          	}
+			});
+		});
+		$('#fotos').click(function(){
+
+			$.ajax({
+	            type: "POST",
+	            //data: dataString,
+	            url: "foto.html",
+	       		success: function(a) {
+
+	       			$('#panel').html(a);
+
+	          	}
+			});
+		});
+
+		$('#pagos').click(function(){
+
+			$.ajax({
+	            type: "POST",
+	            url: "pagos.html",
+	       		success: function(a) {
+
+	       			$('#panel').html(a);
+
+	          	}
+			});
+		});
+		
+		$('#mensajes').click(function(){
+
+			$.ajax({
+	            type: "POST",
+	            url: "mensajes.html",
+	       		success: function(a) {
+
+	       			$('#panel').html(a);
+
+	          	}
+			});
+		});
+		$('#encuentros').click(function(){
+
+			$.ajax({
+	            type: "POST",
+	            url: "encuentros.html",
+	       		success: function(a) {
+
+	       			$('#panel').html(a);
+
+	          	}
+			});
+		});
+		
+	});
+	</script>
+	<script type="text/javascript">
+		
+
+    $(document).ready(function() {
+    	$("#owl-demo").owlCarousel({
+		 
+		autoPlay: 3000, //Set AutoPlay to 3 seconds
+		 
+		items : 3,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3]
+		 
+		});
+    });
+	
+	</script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+	</script>
+				<script>
+										function printValue3(sliderID, textbox) {
+										var x = document.getElementById(textbox);
+										var y = document.getElementById(sliderID);
+										x.value = y.value;
+										}
+										window.onload = function() { printValue3('slider3', 'rangeValue3');}
+									</script> 
+	</body>
+</html>

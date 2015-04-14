@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="">
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+        <title>CovermeApp</title>
+
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- Resources -->
+        <!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/lightbox.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+
+        <!-- modal -->	
+        <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="../../../oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="../../../oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo-cover.png" style="margin-top:-18px" alt="..."></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <div class="popover-test">
+                        <button class="navbar-btn btn btn-red pull-right hidden-sm hidden-xs" data-toggle="popover" data-placement="bottom"  data-html="true" 
+                                data-content="
+                                <center><h3 class='first-child'>Iniciar Sesión</h3></center>
+                                <hr>
+                                <form role='form'>
+                                <div class='input-group'>
+                                <span class='input-group-addon'><i class='fa fa-user'></i></span>
+                                <input type='email' class='form-control' id='email' placeholder='Usuario' data-original-title='' title=''>
+                                </div>
+                                <div class='input-group'>
+                                <span class='input-group-addon'><i class='fa fa-user'></i></span>
+                                <input type='password' class='form-control' id='email' placeholder='Password' data-original-title='' title=''>
+                                </div>
+                                <br>
+                                <div class='input-group'>
+                                </div>
+                                <div class='checkbox'>
+                                <label>
+                                <input type='checkbox'> Recordar mis datos
+                                </label>
+                                </div>
+                                <center>
+								<a href='perfil.html'>
+									<button type='button' class='btn btn-red'>Ingresar</button>
+                                </a>
+								</center>
+                                <hr>
+
+                                <center>
+                                <img src='img/loginfacebook.jpg'>
+                                </center>
+                                <br><br>
+
+                                </form>
+
+
+
+                                <center><p>¿No estas registrado? 
+                                <a class='fancybox'  href='#signup'>
+                                Create un perfil.
+                                </a>
+                                </p></center>
+                                <div id='signup' style='width:auto;display: none;'>
+                                <div class='sign-form'>
+                                <div class='sign-inner'>
+                                <center><h3 class='first-child'>Registrese en CoverMeApp</h3></center>
+                                <hr>
+                                <form role='form'>
+                                <div class='form-group'>
+                                <input type='text' class='form-control' id='nombre' placeholder='Nombre' data-toggle='popover' data-placement='left' data-trigger='focus' data-content='Enter your full name here.' data-original-title='Name'>
+                                </div>
+                                <div class='form-group'>
+                                <input type='text' class='form-control' id='email' placeholder='email' data-toggle='popover' data-placement='left' data-trigger='focus' data-content='Enter your nickname here.' data-original-title='Username'>
+                                </div>
+                                <div class='form-group'>
+                                <input type='password' class='form-control' id='pass' placeholder='Password' data-toggle='popover' data-placement='left' data-trigger='focus' data-content='Enter a valid email here.' data-original-title='Email'	>
+                                </div>
+                                <div class='form-group'>
+                                <input type='password2' class='form-control' id='pass' placeholder='Confirmar Password' data-toggle='popover' data-placement='left' data-trigger='focus' data-content='Enter a valid email here.' data-original-title='Email'	>
+                                </div>
+                                <div class='form-group'>
+
+                                <div class='col-sm-4'>
+                                <label>Día</label>
+                                <select class='form-control' data-toggle='popover' data-placement='left' data-trigger='focus' data-content='Enter a valid email here.' data-original-title='Email'>
+                                <option></option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                                </select>
+                                </div>
+
+                                <div class='col-sm-4'>
+                                <label>Mes</label>
+                                <select class='form-control' data-toggle='popover' data-placement='left' data-trigger='focus' data-content='Enter a valid email here.' data-original-title='Email'>
+                                <option></option>
+                                <option>Enero</option>
+                                <option>Febrero</option>
+                                <option>Marzo</option>
+                                <option>Abril</option>
+                                <option>Mayo</option>
+                                <option>Junio</option>
+                                <option>Julio</option>
+                                <option>Agosto</option>
+                                <option>Septiembre</option>
+                                <option>Octubre</option>
+                                <option>Noviembre</option>
+                                <option>Diciembre</option>
+                                </select>
+
+                                </div>
+
+                                <div class='col-sm-4'>
+                                <label>Año</label>
+                                <input type='text' class='form-control' maxlength='4' id='pass' placeholder='Año' data-toggle='popover' data-placement='left' data-trigger='focus' data-content='Enter a valid email here.' data-original-title='Email'	>
+                                </div>
+
+                                </div>
+                                <div class='form-group'>
+                                <div class='row'>
+                                <div class='col-sm-6'>
+                                <label>Sexo</label><br>
+                                <input type='radio' name='sex' value='male' checked='checked'>Masculino</input> <br>
+                                <input type='radio' name='sex' value='female'>Femenino</input>
+                                </div> 
+                                <div class='col-sm-6'>
+                                <label>Intereses</label><br>
+                                <div class='checkbox-inline'>
+                                <input type='checkbox' name='sex' value='Hombres' checked='checked'>Hombres</input> <br>
+                                <input type='checkbox' name='sex' value='Mujeres'>Mujeres</input><br>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div class='checkbox'>
+                                <label>
+                                <input type='checkbox'> Estoy de acuerdo con los <a href='#'>Terminos y condiciones</a>
+                                </label>
+                                </div>
+                                <hr>
+                                <center>	
+                                <button type='submit' class='btn btn-lg btn-red'>Crear Cuenta</button>
+                                </center>		
+                                </form>
+
+                                </div>
+                                </div>
+                                </div>
+
+                                <div class='pwd-lost'>
+                                <center><div class='pwd-lost-q show'>¿Perdiste la Contraseña? <a class='fancybox'  href='#recover'>Recuperar.</a></div></center>
+                                </div>
+
+                                <div id='recover' style='width:auto;display: none;'>
+                                <div class='sign-form'>
+                                <div class='sign-inner'>
+                                <center><h3 class='first-child'>Recuperar Contraseña</h3></center>
+                                <form role='form'>
+                                <div class='form-group'>
+                                <input type='email' class='form-control' id='email' placeholder='Email' data-toggle='popover' data-placement='left' data-trigger='focus' data-content=''>
+                                </div>
+                                <div class='form-group'>
+                                <center>	
+                                <button type='submit' class='btn btn-lg btn-red'>Enviar Petición</button>
+                                </center>		
+                                </div>
+                                </form>
+                                </div>
+                                </div>
+                                </div>
+
+                                ">
+                            Iniciar Sesión
+                        </button>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="dropdown active">
+                            <!-- <a class="fancybox" href="#signup"> -->
+                            <button class="navbar-btn btn btn-red pull-right hidden-sm hidden-xs fancybox" href="#search" style="margin-left: 50px;" data-content="">
+                                Busqueda Rápida
+                            </button>
+                            <div id='search' style='width:auto;display: none;'>
+                                <div class='sign-form'>
+                                    <div class='sign-inner'>
+                                        <center><h3 class='first-child'>Busqueda Rápida</h3></center>
+                                        <hr>
+                                        <form role='form'>
+                                            <div class='form-group'>
+
+                                            </div>
+                                            <div class='form-group'>
+
+                                                <label>Distancia</label>
+                                                <br>
+                                                <input id="slider2" type="range" onchange="printValue2('slider2', 'rangeValue2')" max="100" min="5">
+                                                <input id="rangeValue2"  class="range" type="text" size="2">
+                                            </div>
+                                            <br>
+                                            <div class='form-group'>
+                                                <label>Intereses</label><br>
+                                                <div class="checkbox-inline">
+                                                    <input type="checkbox" checked="checked" value="Hombres" name="sex">
+                                                    Hombres
+                                                    <br>
+                                                    <input type="checkbox" value="Mujeres" name="sex">
+                                                    Mujeres
+                                                    <br>
+                                                </div>
+                                                <br>
+                                            </div>
+                                            <div class='form-group'>
+                                                <center><a class="btn btn-lg btn-red" href="#">Buscar ahora</a></center>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- </a> -->
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown active">
+                            <a href="index.html" class="dropdown-toggle"> Inicio<!--  <b class="caret"></b> --></a>
+                        </li>
+						<li class="dropdown">
+                            <a href="covermeapp.html" class="dropdown-toggle"> Sobre CovermeApp <!-- <b class="caret"></b> --></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Español <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Ingles</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Mobile Search -->
+                    <form class="navbar-form navbar-right visible-xs" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-btn">
+                                <button class="btn btn-red" type="button">Search!</button>
+                            </span>
+                        </div>
+                    </form>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div> <!-- / .navigation -->
+
+
+        <!-- Wrapper -->
+        <div class="wrapper" style="margin-top:90px;">
+			<!-- Topic Header -->
+		  <div class="topic" style="background-color:#ED1849; color: white;">
+			<div class="container">
+			  <div class="row">
+				<div class="col-sm-4">
+				  <h3>Búsqueda</h3>
+				</div>
+				<div class="col-sm-8">
+				  <ol class="breadcrumb pull-right hidden-xs">
+					<li>Sexo</li>
+					<li>Distancia</li>
+				  </ol>
+				</div>
+			  </div>
+			</div>
+		  </div>
+            <div class="container">
+			   <div class="row our-team-p">
+				  <div class="col-sm-12">
+					
+					<div class="row">
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-1.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-2.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-1.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-2.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-sm-2 col-xs-6">
+						<div class="team-member text-center">
+						  <img class="img-responsive center-block" src="img/photo-3.jpg" alt="...">
+						  <div class="info">
+							John Doe
+							<a href="perfil.html"><p class="text-muted usericon"><i class="fa fa-user usericon"></i></p></a>
+						  </div>
+						</div>
+					  </div>
+					</div> <!-- / .row -->
+				  </div>
+				</div> <!-- / .row -->
+		
+		 </div> <!-- / .container -->
+
+                                <!-- Footer -->
+                                <footer>
+                                    <div class="container">
+                                        <div class="row">
+                                            <!-- Contact Us -->
+
+                                            <div class="col-sm-4 footerseparator">
+                                                <center>	
+                                                    <h4 class="footertitulo"><i class="fa fa-android iconfooter"></i>&nbsp;CovermeApp para Android</h4>
+                                                    <!-- <small>Descarga ahora desde en <a href="#">Google Play</a></small> -->
+                                                    <center>
+                                                        <img src="img/googleplay.png">
+                                                    </center>
+                                                </center>
+                                            </div>
+
+                                            <div class="col-sm-4 footerseparator">
+                                                <center>
+                                                    <h4 class="footertitulo"><i class="fa fa-apple  iconfooter"></i>&nbsp;CovermeApp para IOS</h4>
+                                                    <!-- <small>Descarga ahora desde <a href="#">Itunes</a></small> -->
+                                                    <center>
+                                                        <img src="img/appstore.png">
+                                                    </center>
+                                                </center>
+                                            </div>
+
+                                            <div class="col-sm-4 footerseparator">
+                                                <center>	
+                                                    <h4 class="footertitulo"><i class="fa fa-heart  iconfooter"></i>&nbsp;Difunde la diversion</h4>
+
+                                                    <img src="img/facebook.png">
+                                                    <img src="img/twitter.png">
+
+                                                </center>
+                                            </div>
+
+                                            <!--  <div class="col-sm-3">
+                                                                  <h4><i class="fa fa-twitter-square text-red"></i>&nbsp;LinkDate para Android</h4>
+                                                          </div> -->
+                                        </div>
+                                    </div>
+                                    </div>
+                               
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="copyright">
+                                                Copyright 2014 - CoverMeApp | Derechos Reservados
+                                            </div>
+                                        </div>
+                                    </div>  <!-- / .row -->
+                                </div> <!-- / .container -->
+
+                                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+                                <script src="js/bootstrap.min.js"></script>
+                                <script src="js/scrolltopcontrol.js"></script>
+                                <script src="js/lightbox-2.6.min.js"></script>
+                                <script src="js/custom.js"></script>
+                                <script src="js/index.js"></script>
+                                <script src="js/ui-elements.js"></script>
+                                <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+
+                                <script type="text/javascript">
+                                     $(document).ready(function() {
+                                         $(".fancybox").fancybox();
+                                      });
+                                </script>
+                                <script>
+                                    function printValue(sliderID, textbox) {
+                                        var x = document.getElementById(textbox);
+                                        var y = document.getElementById(sliderID);
+                                        x.value = y.value;
+                                    }
+                                    window.onload = function() {
+                                        printValue('slider1', 'rangeValue1');
+                                    }
+                                </script>
+                                <script>
+                                    function printValue2(sliderID, textbox) {
+                                        var x = document.getElementById(textbox);
+                                        var y = document.getElementById(sliderID);
+                                        x.value = y.value;
+                                    }
+                                    window.onload = function() {
+                                        printValue2('slider2', 'rangeValue2');
+                                    }
+                                </script> 	
+                                </body>
+                                </html>

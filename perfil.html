@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://7.pdvop2sz.z8.ru/paperclip/1.0/ico/favicon.ico">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+ 
+    <title>CovermeApp</title>
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Resources -->
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+
+	<!-- modal -->	
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+	
+	  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+	  <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+	  <link rel="stylesheet" type="text/css" href="css/custom.css" />
+      <script src="js/modernizr.custom.17475.js"></script>
+	
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../../oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="../../../oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    
+    <!-- Navigation -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logo-cover.png" style="margin-top:-18px" alt="..."></a>
+        </div>
+        <div class="collapse navbar-collapse">
+       
+		  
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#search" class="dropdown-toggle fancybox">
+				 <i class="fa fa-users"></i>
+					Gente cerca
+			  </a>
+			</li>
+			
+			<div id='search' style='width:auto;display: none;'>
+                                <div class='sign-form'>
+                                    <div class='sign-inner'>
+                                        <center><h3 class='first-child'>Busqueda Rápida</h3></center>
+                                        <hr>
+                                        <form role='form'>
+                                            <div class='form-group'>
+
+                                            </div>
+                                            <div class='form-group'>
+
+                                                <label>Distancia (Kms/Millas)</label>
+                                                <br>
+                                                <input id="slider2" type="range" onchange="printValue2('slider2', 'rangeValue2')" max="100" min="5">
+                                                <input id="rangeValue2"  class="range" type="text" size="2">
+                                            </div>
+                                            <br>
+                                            <div class='form-group'>
+                                                <label>Intereses</label><br>
+                                                <div class="checkbox-inline">
+                                                    <input type="checkbox" checked="checked" value="Hombres" name="sex">
+                                                    Hombres
+                                                    <br>
+                                                    <input type="checkbox" value="Mujeres" name="sex">
+                                                    Mujeres
+                                                    <br>
+                                                </div>
+                                                <br>
+                                            </div>
+                                            <div class='form-group'>
+                                                <center><a class="btn btn-lg btn-red" href="busqueda.html">Buscar ahora</a></center>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                 </div>
+			
+			
+				<li class="dropdown">
+					<a href="#listado" class="dropdown-toggle fancybox">
+                    <i class="fa fa-comments"></i>
+					Mensajes
+					</a>
+				</li>
+                
+                	<div id='listado' style='width:auto;display: none;'>
+                                <div class='sign-form'>
+                                    <div class='sign-inner'>
+                                        <center><h3 class='first-child'>Listado de Mensajes</h3></center>
+                                        <hr>
+                                       
+                                       <ul style="list-style-type:none;>
+                                       		<li>
+                                            	<a href="perfil.html">
+                                                    <span class="badge pull-right">3</span>
+                                                     Nombre del Usuario
+                                                </a>
+                                                <br><hr>
+                                            </li>
+                                            <li>
+                                            	<a href="perfil.html">
+                                                    <span class="badge pull-right">3</span>
+                                                     Nombre del Usuario
+                                                </a>
+                                                 <br><hr>
+                                        	</li>
+                                            <li>
+                                            	<a href="perfil.html">
+                                                    <span class="badge pull-right">3</span>
+                                                     Nombre del Usuario
+                                                </a>
+                                                 <br><hr>
+                                        	</li>
+                                            <li>
+                                            	<a href="perfil.html">
+                                                    <span class="badge pull-right">3</span>
+                                                     Nombre del Usuario
+                                                </a>
+                                                 <br><hr>
+                                        	</li>
+                                            <li>
+                                            	<a href="perfil.html">
+                                                    <span class="badge pull-right">3</span>
+                                                     Nombre del Usuario
+                                                </a>
+                                                 <br><hr>
+                                        	</li>
+                                            <li>
+                                            	<a href="perfil.html">
+                                                    <span class="badge pull-right">3</span>
+                                                     Nombre del Usuario
+                                                </a>
+                                                 <br><hr>
+                                        	</li>
+                                            <li>
+                                            	<a href="perfil.html">
+                                                    <span class="badge pull-right">3</span>
+                                                    Nombre del Usuario
+                                                </a>
+                                                 <br><hr>
+                                        	</li>
+                                            
+                                       </ul>
+                                       
+                                    </div>
+                                </div>
+                 </div>
+			
+				
+			
+			<li class="dropdown">
+				<a href="#">
+					<img src="http://placehold.it/42x42">
+                    	<div class="popover-test">
+						<button class="btn btn-xs btn-red botoncabecera" data-toggle="popover" data-placement="bottom"  data-html="true"  		data-content="
+						
+						<div class='info-board info-board-red'>
+							<h6>Configuracion de Cuenta</h6>
+						</div>
+						<br>
+						<div class='info-board info-board-red'>
+							<h6>Cerrar Sesión</h6>
+						</div>
+				"><i class="fa fa-sort-down" style="color:white"></i>
+						</button>
+                        </div>
+				</a> 
+			</li>
+            
+         </ul>
+          <!-- Mobile Search -->
+          <form class="navbar-form navbar-right visible-xs" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                <button class="btn btn-red" type="button">Search!</button>
+              </span>
+            </div>
+          </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div> <!-- / .navigation -->
+	
+	
+    <!-- Wrapper -->
+    <div class="wrapper" style="margin-top:95px;">
+		 <div class="container">
+			<div class="row">
+				<div class="container demo-1">
+					<div class="main">
+						<ul id="carousel" class="elastislide-list">
+							<li><a href="#"><img src="images/small/1.jpg" alt="image01" /></a></li>
+							<li><a href="#"><img src="images/small/2.jpg" alt="image02" /></a></li>
+							<li><a href="#"><img src="images/small/3.jpg" alt="image03" /></a></li>
+							<li><a href="#"><img src="images/small/4.jpg" alt="image04" /></a></li>
+							<li><a href="#"><img src="images/small/5.jpg" alt="image05" /></a></li>
+							<li><a href="#"><img src="images/small/6.jpg" alt="image06" /></a></li>
+							<li><a href="#"><img src="images/small/7.jpg" alt="image07" /></a></li>
+							<li><a href="#"><img src="images/small/8.jpg" alt="image08" /></a></li>
+							<li><a href="#"><img src="images/small/9.jpg" alt="image09" /></a></li>
+							<li><a href="#"><img src="images/small/10.jpg" alt="image10" /></a></li>
+							<li><a href="#"><img src="images/small/11.jpg" alt="image11" /></a></li>
+							<li><a href="#"><img src="images/small/12.jpg" alt="image12" /></a></li>
+							<li><a href="#"><img src="images/small/13.jpg" alt="image13" /></a></li>
+							<li><a href="#"><img src="images/small/14.jpg" alt="image14" /></a></li>
+							<li><a href="#"><img src="images/small/15.jpg" alt="image15" /></a></li>
+							<li><a href="#"><img src="images/small/16.jpg" alt="image16" /></a></li>
+							<li><a href="#"><img src="images/small/17.jpg" alt="image17" /></a></li>
+							<li><a href="#"><img src="images/small/18.jpg" alt="image18" /></a></li>
+							<li><a href="#"><img src="images/small/19.jpg" alt="image19" /></a></li>
+							<li><a href="#"><img src="images/small/20.jpg" alt="image20" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div> 
+		 </div>
+		<hr>
+	</div>
+	
+	 <div class="wrapper">
+		 <div class="container">
+			 <div class="row">
+					<div class='col-sm-3'>
+						<div class="panel panel-default">
+						  <div class="panel-body">
+							<ul class="media-list">
+							  <li class="media">
+								<a class="pull-left" href="#">
+								</a>
+								<div class="media-body">
+									<span class="pull-right">
+									<br>
+										<p><small>Tu Popularidad es:</small></p>
+										<p>Muy Baja</p>
+								  </span>
+									  <img src="http://placehold.it/96x96">
+								</div>
+							  </li>
+							</ul>
+							<br>
+						
+							
+							<center>
+							<div id="stars" data-score="1"></div>
+							</center>
+							<br><br>
+							
+							<a id="perfil"><span class="pull-right"><i class="fa fa-arrow-right"></i></span>
+									Ver Perfil</a>
+							<br><br>
+							<a id="favoritos">
+							<span class="badge pull-right">3</span>
+									Favoritos</a>
+							<br><br>
+							<a id="comentarios">
+							<span class="badge pull-right">3</span>
+									Comentarios</a>
+							<br><br>
+							<a id="lista">
+							<span class="badge pull-right">3</span>
+									Lista negra</a>
+							<br><br>
+						</div>
+						</div>
+						<div class="panel panel-default">
+						   <div class="panel-body">
+								<span class="pull-right">0.0</span>
+									Puntuacion
+								<div class="container">	
+									<div class="row">
+										<div class='col-sm-4'>
+											<img src="http://placehold.it/64x64">
+										</div>
+										<div class='col-sm-4'>
+											<img src="http://placehold.it/64x64">
+										</div>
+										<div class='col-sm-4'>
+											<img src="http://placehold.it/64x64">
+										</div>
+									</div>
+								</div>
+						   </div>
+						</div>
+						
+					</div>
+					
+					<div class='col-sm-9' id="panel">
+						
+					  <div class="panel panel-default">
+							
+							<div id="stat">	</div>	
+						  
+						  <div class="panel-body">
+							<div class='col-sm-2'>
+								<div class="social">
+									  <ul class="list-inline">
+										<li>
+											<a href="#" class="rss" data-toggle="modal" data-target="#dm">
+												<i class="fa fa-envelope mensaje2"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="rss" onclick="status()">
+												<i class="fa fa-star-o mensaje2"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="rss" onclick="status2()">
+												<i class="fa fa-times mensaje2"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							
+								<div class="modal fade" id="dm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-dialog">
+									<div class="modal-content">
+									  <div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title" id="myModalLabel">Enviar Mensaje Directo</h4>
+									  </div>
+									  <div class="modal-body">
+										<form>
+											<label>Comentario o Mensaje</label>
+											<br>
+											<textarea id="comentario" rows=5 cols=70></textarea>
+										</form>
+									  </div>
+									  <div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+										<button type="button" class="btn btn-primary btn-red">Enviar Mensaje</button>
+									  </div>
+									</div>
+								  </div>
+								</div>
+								
+							</div>
+									
+									
+								<div class='col-sm-10'>
+									<div class="row">
+										<h2>Nombre, 25
+											<span class="pull-right">
+												<i class="fa fa-angle-left"></i>
+												<i class="fa fa-angle-right"></i>
+											</span>
+										</h2>
+											
+									
+										<hr>
+										<div class='col-sm-3'><small>0 contactos comunes</small></div>
+										<div class='col-sm-3'><small>0 intereses en común</small></div>
+										<div class='col-sm-3'>
+											<small>Distancia</small>
+										</div>
+										<div class='col-sm-3'>
+											<p class="text-right">
+												<small>
+													<a href="#">Mas información</a>
+												</small>
+											</p>
+										</div>	
+									
+										<h2 class="headline" id="carousel"><span></span></h2>
+										<div class="carousel-example">
+										  <!-- Image Carousel -->
+										  <div id="portfolio-slideshow" class="carousel slide" data-ride="carousel">
+											<!-- Indicators -->
+											<ol class="carousel-indicators">
+											  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+											  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+											  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+											</ol>
+											<!-- Wrapper for slides -->
+											<div class="carousel-inner">
+											  <div class="item active">
+												<img src="img/general-1.jpg" class="img-responsive" alt="...">
+											  </div>
+											  <div class="item">
+												<img src="img/general-2.jpg" class="img-responsive" alt="...">
+											  </div>
+											  <div class="item">
+												<img src="img/general-3.jpg" class="img-responsive" alt="...">
+											  </div>
+											  <div class="item">
+												<img src="img/general-4.jpg" class="img-responsive" alt="...">
+											  </div>
+											</div>
+											<!-- Controls -->
+											<a class="carousel-arrow carousel-arrow-prev" href="#portfolio-slideshow" data-slide="prev">
+											  <i class="fa fa-angle-left"></i>
+											</a>
+											<a class="carousel-arrow carousel-arrow-next" href="#portfolio-slideshow" data-slide="next">
+											  <i class="fa fa-angle-right"></i>
+											</a>
+										  </div>
+										</div>
+
+									
+									</div>
+								</div>
+							</div>
+						  </div>
+						</div>
+					</div>
+			</div>
+			<hr>
+	</div>			
+
+	<!-- Footer -->
+	 <footer>
+      <div class="container">
+        <div class="row">
+          <!-- Contact Us -->
+			
+		  <div class="col-sm-4 footerseparator">
+				<center>	
+					<h4 class="footertitulo"><i class="fa fa-android iconfooter"></i>&nbsp;CovermeApp para Android</h4>
+					<!-- <small>Descarga ahora desde en <a href="#">Google Play</a></small> -->
+						<center>
+						<img src="img/googleplay.png">
+					</center>
+				</center>
+			</div>
+			
+			<div class="col-sm-4 footerseparator">
+				<center>
+					<h4 class="footertitulo"><i class="fa fa-apple  iconfooter"></i>&nbsp;CovermeApp para IOS</h4>
+					<!-- <small>Descarga ahora desde <a href="#">Itunes</a></small> -->
+					<center>
+						<img src="img/appstore.png">
+					</center>
+				</center>
+			</div>
+		  
+		  <div class="col-sm-4 footerseparator">
+				<center>	
+					<h4 class="footertitulo"><i class="fa fa-heart  iconfooter"></i>&nbsp;Difunde la diversion</h4>
+						
+							<img src="img/facebook.png">
+							<img src="img/twitter.png">
+					
+				</center>
+		  </div>
+		  
+          <!--  <div class="col-sm-3">
+				<h4><i class="fa fa-twitter-square text-red"></i>&nbsp;LinkDate para Android</h4>
+			</div> -->
+        </div>
+      </div>
+	 </div>
+    </footer>
+	 
+	<div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright">
+            Copyright 2014 - CoverMeApp | Derechos Reservados
+          </div>
+        </div>
+      </div>  <!-- / .row -->
+    </div> <!-- / .container -->
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/scrolltopcontrol.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/ui-elements.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquerypp.custom.js"></script>
+	<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+	
+	<script type="text/javascript" src="js/labs.js"></script>
+	<script type="text/javascript" src="js/jquery.raty.js"></script>
+	
+	<script type="text/javascript">
+			
+			$( '#carousel' ).elastislide();
+			
+	</script>
+   
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+	</script>
+	<script type="text/javascript">
+										$(document).ready(function() {
+										$('#stars').raty({
+										  number: 10,
+										  readOnly: true, score: 3,
+										});
+									});			
+	</script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		
+		$('#perfil').click(function(){
+
+			$.ajax({
+	            type: "POST",
+	            //data: dataString,
+	            url: "perfilajax.html",
+	       		success: function(a) {
+
+	       			$('#panel').html(a);
+
+	          	}
+			});
+		});
+		$('#favoritos').click(function(){
+
+			$.ajax({
+	            type: "POST",
+	            //data: dataString,
+	            url: "favoritos.html",
+	       		success: function(a) {
+
+	       			$('#panel').html(a);
+
+	          	}
+			});
+		});
+
+		$('#comentarios').click(function(){
+
+			$.ajax({
+	            type: "POST",
+	            url: "comentarios.html",
+	       		success: function(a) {
+
+	       			$('#panel').html(a);
+
+	          	}
+			});
+		});
+		
+		$('#lista').click(function(){
+
+			$.ajax({
+	            type: "POST",
+	            url: "listanegra.html",
+	       		success: function(a) {
+
+	       			$('#panel').html(a);
+
+	          	}
+			});
+		});
+		$('#mensajes').click(function(){
+
+			$.ajax({
+	            type: "POST",
+	            url: "mensajes.html",
+	       		success: function(a) {
+
+	       			$('#panel').html(a);
+
+	          	}
+			});
+		});
+
+		
+	});
+	</script>	
+	<script>
+		function status()
+		{
+			var status = '<div class="info-board info-board-red"><small>Usuario Agregado a Favoritos</small></div>';
+			document.getElementById("stat").innerHTML = status;
+			setTimeout("statusclean()", 2000);
+		}
+		function status2()
+		{
+			var status = '<div class="info-board info-board-red"><small>Usuario Agregado a la Lista Negra</small></div>';
+			document.getElementById("stat").innerHTML = status;
+			setTimeout("statusclean()", 2000);
+		}
+		function statusclean()
+		{
+			var status = '';
+			document.getElementById("stat").innerHTML = status;
+		}
+	</script>
+	<script>
+		
+		$('#mensaje').on('hidden.bs.popover', function () {
+			  // do something…
+			})
+
+
+	</script>
+	</body>
+</html>

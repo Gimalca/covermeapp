@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <body>
+    <div class="wrapper">
+		 <div class="container">
+			 <div class="row">
+					
+					<div class='col-sm-12' id="panel">
+					  <div class="panel panel-default">
+						  <div class="panel-body">
+								
+								<div class="row">
+									<div class='col-sm-1'></div>
+									<div class='col-sm-11'>
+										<h2>Mensajes</h2>
+										<hr>
+												<div class="info-board info-board-red">
+													
+														
+														<div class="media">
+														  <a class="pull-left" href="#">
+															<img src="http://placehold.it/72x72">		
+														  </a>
+														  <div class="media-body">
+															
+																<h3 class="media-heading">Nombre, 23</h3>
+																<a id="chat"><span class="pull-right"><i class="fa fa-comments"></i>Chat</span></a>
+														 
+															 <div id="stars2" data-score="1"></div>
+														  </div>
+														</div>
+												</div>
+											
+											<div class="info-board info-board-red">
+												<div class="media">
+												  <a class="pull-left" href="#">
+													<img src="http://placehold.it/72x72">		
+												  </a>
+												   <div class="media-body">
+															
+																<h3 class="media-heading">Nombre, 23</h3>
+																<a id="chat"><span class="pull-right"><i class="fa fa-comments"></i>Chat</span></a>
+															 
+															 <div id="stars2" data-score="1"></div>
+														  </div>
+												</div>
+											</div>
+											
+											<div class="info-board info-board-red">
+												<div class="media">
+												  <a class="pull-left" href="#">
+													<img src="http://placehold.it/72x72">		
+												  </a>
+												  <div class="media-body">
+															
+																<h3 class="media-heading">Nombre, 23</h3>
+																<a id="chat"><span class="pull-right"><i class="fa fa-comments"></i>Chat</span></a>
+																
+															 <div id="stars2" data-score="1"></div>
+														  </div>
+												</div>
+											</div>
+											
+											<div class="info-board info-board-red">
+												<div class="media">
+												  <a class="pull-left" href="#">
+													<img src="http://placehold.it/72x72">		
+												  </a>
+														<div class="media-body">
+															
+																<h3 class="media-heading">Nombre, 23</h3>
+																<a id="chat"><span class="pull-right"><i class="fa fa-comments"></i>Chat</span></a>
+																
+															 <div id="stars2" data-score="1"></div>
+														  </div>
+												</div>
+											</div>
+											
+											
+								</div>
+								
+								
+								</div>
+							</div>
+						  </div>
+						</div>
+					</div>
+			</div>
+			<hr>
+	</div>			
+	<script>
+		$('#chat').click(function(){
+
+			$.ajax({
+	            type: "POST",
+	            url: "chat.html",
+	       		success: function(a) {
+
+	       			$('#panel').html(a);
+
+	          	}
+			});
+		});
+	
+	</script>
+	</body>
+</html>
