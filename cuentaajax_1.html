@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <body>
+    
+	<div class="wrapper">
+		 <div class="container">
+			 <div class="row">
+					
+					<div class='col-sm-12' id="panel">
+					  <div class="panel panel-default">
+						  <div class="panel-body">
+							
+								<div class='col-sm-1'></div>
+								<div class='col-sm-11'>
+									<div class="row">
+										<h2>Mi perfil, 25 </h2>
+										<hr>
+										
+										<form role='form'>
+											  <div class='input-group'>
+												<span class='input-group-addon'><i class='fa fa-user'></i></span>
+												<input type='text' class='form-control' id='email' placeholder='Nombre' data-original-title='' title=''>
+											  </div>
+											  <br>
+											  <div class='input-group'>
+												<span class='input-group-addon'><i class='fa fa-user'></i></span>
+												<input type='email' class='form-control' id='email' placeholder='Email' data-original-title='' title=''>
+											  </div>
+											  <br>
+											  <div class='input-group'>
+												<span class='input-group-addon'><i class='fa fa-user'></i></span>
+												<input type='password' class='form-control' id='email' placeholder='Password' data-original-title='' title=''>
+											  </div>
+											  <br>
+											 
+											<div class="row">		
+											  <div class='col-sm-6'>
+												<label>Sexo</label><br>
+												<input type='radio' name='sex' value='male' checked='checked'>Masculino</input> <br>
+												<input type='radio' name='sex' value='female'>Femenino</input>
+											  </div>
+											  <div class='col-sm-6'>
+											   <label>Intereses</label><br>
+											  <input type='checkbox' name='sex' value='Hombres' checked='checked'>Hombres</input> <br>
+											  <input type='checkbox' name='sex' value='Mujeres'>Mujeres</input><br>
+											  </div>
+											</div>
+											<div class="row">		
+											  <div class='col-sm-9'>
+												<div class='col-sm-3'>
+													<label>Día</label>
+														<select class='form-control' data-toggle='popover' data-placement='left' data-trigger='focus' data-content='Enter a valid email here.' data-original-title='Email'>
+															<option></option>
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+															<option>5</option>
+															<option>6</option>
+															<option>7</option>
+															<option>8</option>
+															<option>9</option>
+															<option>10</option>
+															<option>11</option>
+															<option>12</option>
+															<option>13</option>
+															<option>14</option>
+															<option>15</option>
+															<option>16</option>
+															<option>17</option>
+															<option>18</option>
+															<option>19</option>
+															<option>20</option>
+															<option>21</option>
+															<option>22</option>
+															<option>23</option>
+															<option>24</option>
+															<option>25</option>
+															<option>26</option>
+															<option>27</option>
+															<option>28</option>
+															<option>29</option>
+															<option>30</option>
+															<option>31</option>
+													</select>
+												</div>
+												<div class='col-sm-3'>
+													<label>Mes</label>
+														<select class='form-control' data-toggle='popover' data-placement='left' data-trigger='focus' data-content='Enter a valid email here.' data-original-title='Email'>
+																	<option></option>
+																	<option>Enero</option>
+																	<option>Febrero</option>
+																	<option>Marzo</option>
+																	<option>Abril</option>
+																	<option>Mayo</option>
+																	<option>Junio</option>
+																	<option>Julio</option>
+																	<option>Agosto</option>
+																	<option>Septiembre</option>
+																	<option>Octubre</option>
+																	<option>Noviembre</option>
+														</select>
+												</div>
+												<div class='col-sm-3'>
+													<label>Año</label>
+													<input type='text' class='form-control' maxlength='4' id='pass' placeholder='Año' data-toggle='popover' data-placement='left' data-trigger='focus' data-content='Enter a valid email here.' data-original-title='Email'	>
+												</div>
+											</div>					  
+										</div>
+										<br>
+										
+												<div class='input-group'>
+													<script>
+										function printValue3(sliderID, textbox) {
+										var x = document.getElementById(textbox);
+										var y = document.getElementById(sliderID);
+										x.value = y.value;
+										}
+										window.onload = function() { printValue3('slider3', 'rangeValue3');}
+									</script> 
+									<label>Rango en Distancia (Kms/Millass)</label>
+									<br>
+									<input id="slider3" type="range" onchange="printValue3('slider3','rangeValue3')" max="100" min="5">
+									<input id="rangeValue3" class="range" type="text" size="2">
+												</div>
+											</div>
+										
+										<center>
+												<button type='submit' class='btn btn-red'>Cambiar Datos</button>
+										</center>
+										<hr>
+										</form>
+								</div>
+								</div>
+							</div>
+						  </div>
+						</div>
+					</div>
+			</div>
+			<hr>
+	</div>			
+
+	</body>
+</html>
